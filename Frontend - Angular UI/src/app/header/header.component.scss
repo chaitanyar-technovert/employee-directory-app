@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+
+}
+
+.logo-and-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.logo {
+    float: left;
+    margin-right: 22px;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.heading-and-slogan {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding-right: 10px;
+
+}
+
+.welcome-message p {
+    margin: 0px;
+    
+}
+
+.blue-color {
+    color: rgba(39, 187, 252, 255);
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin: 0px;
+
+}
+
+.slogan {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: rgb(138, 138, 138);
+    font-size: 1rem;
+}
+
+.user-and-logo {
+    display: flex;
+    align-self: flex-end;
+    align-items: baseline;
+
+}
+
+.user-image {
+    padding-right: 5px;
+}
+
+.user-image img {
+    width: 60px;
+}

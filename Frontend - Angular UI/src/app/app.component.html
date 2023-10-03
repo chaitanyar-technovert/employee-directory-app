@@ -1,0 +1,13 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="search-filter-container">
+    <app-sidebar-search></app-sidebar-search>
+    <div class="search-filter-and-emp-detail-display">
+      <app-pagination-search></app-pagination-search>
+      <div class="emp-details-display-container" id="emp-details-display-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <router-outlet name="empAddEditComp"></router-outlet>  -->

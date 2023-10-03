@@ -1,0 +1,180 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Chaitanya",
+      "lastName": "Rane",
+      "email": "chaitanya@gmail.com",
+      "jobTitle": 6,
+      "officeLocation": 1,
+      "department": 5,
+      "phoneNumber": 234567890,
+      "skypeId": " ChayR",
+      "id": 1
+    },
+    {
+      "firstName": "Kajal",
+      "lastName": "Nawale",
+      "email": "kajal@gmail.com",
+      "jobTitle": 3,
+      "officeLocation": 1,
+      "department": 2,
+      "phoneNumber": 7894561230,
+      "skypeId": "KajalN",
+      "id": 2
+    },
+    {
+      "firstName": "Anthony",
+      "lastName": "Morris",
+      "email": "anthony@gmail.com",
+      "jobTitle": 1,
+      "officeLocation": 2,
+      "department": 1,
+      "phoneNumber": 410852963,
+      "skypeId": "AnthonyM",
+      "id": 3
+    },
+    {
+      "firstName": "Robert",
+      "lastName": "Mitchell",
+      "email": "robert@gmail.com",
+      "jobTitle": 6,
+      "officeLocation": 2,
+      "department": 1,
+      "phoneNumber": 1234567890,
+      "skypeId": "RobertM",
+      "id": 4
+    },
+    {
+      "firstName": "Rahul",
+      "lastName": "Kumar",
+      "email": "rahul@gmail.com",
+      "jobTitle": 6,
+      "officeLocation": 1,
+      "department": 5,
+      "phoneNumber": 7894561230,
+      "skypeId": "RahulK",
+      "id": 5
+    },
+    {
+      "firstName": "Olivia",
+      "lastName": "Watson",
+      "email": "olivia@gmail.com",
+      "jobTitle": 5,
+      "officeLocation": 2,
+      "department": 4,
+      "phoneNumber": 3748296379,
+      "skypeId": "OliviaW",
+      "id": 6
+    },
+    {
+      "firstName": "Guna Surya",
+      "lastName": "D",
+      "email": "guna.surya@gmail.com",
+      "jobTitle": 2,
+      "officeLocation": 1,
+      "department": 1,
+      "phoneNumber": 1234567890,
+      "skypeId": "GunaSurya",
+      "id": 7
+    },
+    {
+      "firstName": "Angela",
+      "lastName": "Bailey",
+      "email": "angela@gmail.com",
+      "jobTitle": 3,
+      "officeLocation": 2,
+      "department": 2,
+      "phoneNumber": 7531598201,
+      "skypeId": "AngelaB",
+      "id": 8
+    }
+  ],
+  "departments": [
+    {
+      "name": "IT",
+      "count": 3,
+      "id": 1
+    },
+    {
+      "name": "Human Resources",
+      "count": 2,
+      "id": 2
+    },
+    {
+      "name": "MD",
+      "count": 0,
+      "id": 3
+    },
+    {
+      "name": "Sales",
+      "id": 4,
+      "count": 1
+    },
+    {
+      "name": "Product Engineering",
+      "count": 2,
+      "id": 5
+    }
+  ],
+  "officeLocations": [
+    {
+      "name": "India",
+      "count": 0,
+      "id": 1
+    },
+    {
+      "name": "Seattle",
+      "count": 0,
+      "id": 2
+    }
+  ],
+  "jobTitles": [
+    {
+      "name": "SharePoint Practice Head",
+      "count": 0,
+      "id": 1
+    },
+    {
+      "name": ".Net Development Lead",
+      "count": 0,
+      "id": 2
+    },
+    {
+      "name": "Recruiting Expert",
+      "count": 0,
+      "id": 3
+    },
+    {
+      "name": "BI Developer",
+      "count": 0,
+      "id": 4
+    },
+    {
+      "name": "Business Analyst",
+      "count": 0,
+      "id": 5
+    },
+    {
+      "name": "Software Developer",
+      "count": 0,
+      "id": 6
+    }
+  ]
+}

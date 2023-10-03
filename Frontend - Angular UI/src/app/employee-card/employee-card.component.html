@@ -1,0 +1,21 @@
+<div class='user-info-card' [id]="employee.id">
+    <div class="user-photo">
+        <img src="../../assets/user-png-33842.png" alt="emp-photo">
+    </div>
+    <div class="emp-details">
+        <span><b><label class="emp-name font-open-sans">{{ employee.firstName + ' ' + employee.lastName }}</label></b></span>
+        <div class="emp-designation-and-dept">
+            <p class="emp-designation font-open-sans">{{ getjobTitleName(employee.jobTitleId) }}</p>
+            <p class="emp-department font-open-sans">{{ getDepartmentName(employee.departmentId) }}</p>
+        </div>
+        <div class="emp-details-icons">
+            <i class="fa-solid fa-square-phone fa-lg" style="color: #969595;"></i>
+            <i class="fa-solid fa-square-envelope fa-lg" style="color: #969595;"></i>
+            <i class="fa-solid fa-comment fa-lg" style="color: #969595;"></i>
+            <i class="fa-solid fa-star fa-lg" style="color: #969595;"></i>
+            <i class="fa-solid fa-heart fa-lg" style="color: #969595;"></i>
+        </div>
+        <i class="fa-solid fa-pen-to-square fa-sm edit-icon" style="color: #969595;" (click)="editEmpCard(employee)"></i>
+        <i class="fa-solid fa-trash-alt fa-sm delete-icon" style="color: #969595;" (click)="deleteEmpDetails(employee.id)"></i>
+    </div>
+</div>

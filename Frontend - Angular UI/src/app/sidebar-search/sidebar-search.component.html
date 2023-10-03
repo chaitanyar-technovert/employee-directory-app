@@ -1,0 +1,29 @@
+<div class="filter font-open-sans">
+    <div class="left-filter-styles">
+        <h3>Departments</h3>
+        <ul id="departments-filters">
+            <li *ngFor="let department of departments" (click)="onFilterClick('department', department.name)">{{ getDepartmentName(department.name) }} ({{ department.count }})</li>
+            
+            <!-- <li [routerLinkActive]="['active']" *ngFor="let department of departments">
+                <a [routerLink]="['/your-route-here', department.name]" (click)="onFilterClick('department', department.name)">
+                  {{ getDepartmentName(department.name) }} ({{ department.count }})
+                </a>
+              </li>
+               -->
+            <!-- <button *ngIf="departments.length > itemsToShow" (click)="showMoreItems()">View More</button> -->
+        </ul>
+        
+        
+        <h3>Offices</h3>
+        <ul id="office-filters">
+            <li *ngFor="let officeLocation of officeLocations" (click)="onFilterClick('officeLocation', officeLocation.name)">{{ getOfficeLocationName(officeLocation.name) }} ({{ officeLocation.count }})</li>
+        </ul>
+        
+        <h3>Job Titles</h3>
+        <ul id="job-title-filters">
+            <li *ngFor="let jobTitle of jobTitles" (click)="onFilterClick('jobTitle', jobTitle.name)">{{ getjobTitleName(jobTitle.name) }} ({{ jobTitle.count }})</li>
+            <!-- <li><button class="view-more-btn blue-color">view more</button></li> -->
+            <!-- <button *ngIf="jobTitles.length > itemsToShow" (click)="showMoreItems()">View More</button> -->
+        </ul>
+    </div>
+</div>

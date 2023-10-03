@@ -1,0 +1,27 @@
+.content {
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+
+    mat-form-field {
+        width: 100%;
+    }
+}
+
+.action {
+    padding: 0px 25px 20px;
+    button {
+        flex: 1;
+    }
+}
+
+.emp-form-heading {
+    text-align: center;
+    background-color: #00B1FC;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}

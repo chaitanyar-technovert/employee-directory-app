@@ -1,0 +1,41 @@
+<div class="search-filter">
+    <div class="search-buttons" id="search-buttons">
+        <button class="char-search user-icon-search" id=""><i class="fa-solid fa-user fa-sm" style="color: #ffffff;" (click)="filterByCharacters('')"></i></button>
+        <button *ngFor="let char of characters" class="char-search" [id]="'char-' + char.toLowerCase()" (click)="filterByCharacters(char.toLowerCase())" >{{ char }}</button>
+    </div>
+
+    <div class="manual-search-filter">
+        <div class="search-by-keyword-and-filter-by-dropdown">
+            <div class="search-employee font-open-sans">
+                <label class="search-label">Search</label>
+                <div class="search-bar">
+                    <i class="fa-solid  searchbar-icon  fa-magnifying-glass fa-sm" style="color: #C2C2C2;"></i>
+                    <input type="text" class="input-type-text" id="ut-text" placeholder="Enter any keyword" [(ngModel)]="searchValue" (input)="filterBySearchEvent($event)">
+                </div>
+                <button class="clear-btn" id="clear-btn" (click)="clearFilters()">Clear</button>
+            </div>
+            <div>
+                <label class="font-open-sans">Filter by</label>
+                <select class="search-filter-list" id="filter-by" [(ngModel)]="selectedFilterBy" (change)="filterBySearch()" required [style]="">
+                    <option disabled selected value="">Select an option</option>
+                    <!-- <option value="firstName" class="font-open-sans">First Name</option>
+                    <option value="lastName" class="font-open-sans">Last Name</option>
+                    <option value="email" class="font-open-sans">Email</option>
+                    <option value="jobTitle" class="font-open-sans">Job Title</option>
+                    <option value="officeLocation" class="font-open-sans">Office Location</option>
+                    <option value="department" class="font-open-sans">Department</option>
+                    <option value="phoneNumber" class="font-open-sans">Phone Number</option>
+                    <option value="skypeId" class="font-open-sans">Skype Id</option> -->
+                    <option *ngFor="let option of filterOptions" [value]="option.value" class="font-open-sans">{{ option.label }}</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <button class="add-employee-btn" id="show-add-employee" (click)="openAddEditEmpForm()">Add Employee</button>
+        </div>
+    </div>
+    <div class="search-filter-note font-open-sans">
+        <p><b>Note:&nbsp;</b>Please use the advanced filter options to refine your results</p>
+    </div>
+</div>

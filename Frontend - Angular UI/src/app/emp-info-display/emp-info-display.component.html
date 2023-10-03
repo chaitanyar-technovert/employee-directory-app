@@ -1,0 +1,21 @@
+<div class="container">
+  <ng-container *ngIf="showDepartments; else noDepartments">
+    <app-departments></app-departments>
+  </ng-container>
+
+  <ng-template #noDepartments>
+
+    <app-employee-card
+      *ngFor="let employee of employees"
+      [employee]="employee"
+      [departments]="departments"
+      [jobTitles]="jobTitles"
+      (deleteEmployee)="onDeleteEmployee($event)"
+    ></app-employee-card>
+
+    <!-- <p>No departments to display.</p> -->
+  </ng-template>
+
+</div>
+
+<!-- <router-outlet></router-outlet> -->

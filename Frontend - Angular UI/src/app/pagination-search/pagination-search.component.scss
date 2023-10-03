@@ -1,0 +1,124 @@
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    // width: 80%;
+}
+
+.search-buttons button {
+    background-color: rgba(0, 177, 252, 255);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    height: 6vh;
+    width: 2.8vw;
+    margin-left: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.search-buttons button:hover {
+    background: #262626;
+    color: #f5f5f5;
+}
+
+.manual-search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar {
+    border: 1px solid#C2C2C2;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.search-by-keyword-and-filter-by-dropdown {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-employee {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.add-employee-btn {
+    background-color: rgba(0, 177, 252, 255);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    height: 35px;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.add-employee-btn:hover {
+    background: #262626;
+    color: #f5f5f5;
+}
+
+.add .search-label {
+    font-size: 16px;
+    padding-right: 14px;
+}
+
+.search-employee .search-label {
+    margin-right: 10px;
+}
+
+.input-type-text {
+    height: 30px;
+    width: 200px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 20px;
+    outline: none;
+}
+
+.clear-btn {
+    background-color: rgba(105, 186, 0, 255);
+    color: white;
+    border: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.clear-btn:hover {
+    background: #262626;
+    color: #f5f5f5;
+}
+
+.search-filter-list {
+    height: 35px;
+    width: 200px;
+    border: 1px solid rgb(190, 190, 190);
+    margin-left: 8px;
+    margin-right: 20px;
+    padding-left: 10px;
+    color: rgb(126, 121, 117);
+    outline: none;
+
+}
+
+.search-filter-note {
+    margin-top: 15px;
+    padding-top: 0px;
+    font-size: 12px;
+}

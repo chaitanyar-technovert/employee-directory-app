@@ -1,0 +1,74 @@
+<div mat-dialog-title>
+    <h1 class="emp-form-heading">Employee Details</h1>
+</div>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" placeholder="" formControlName="firstName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" formControlName="lastName">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="example@mail.com" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Job Title</mat-label>
+                <!-- <input matInput type="text" placeholder="" formControlName="jobTitle"> -->
+                <mat-select formControlName="jobTitleId">
+                    <mat-option *ngFor="let jobTitle of jobTitles" [value]="jobTitle.id">{{ jobTitle.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Office Location</mat-label>
+                <!-- <input matInput type="text" placeholder="" formControlName="officeLocation"> -->
+                <mat-select formControlName="officeLocationId">
+                    <mat-option *ngFor="let officeLocation of officeLocations" [value]="officeLocation.id">{{ officeLocation.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Department</mat-label>
+                <!-- <input matInput type="text" placeholder="" formControlName="department"> -->
+                <mat-select formControlName="departmentId">
+                    <mat-option *ngFor="let department of departments" [value]="department.id">{{ department.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+
+            <mat-form-field appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input matInput type="number" placeholder="" formControlName="phoneNumber">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Skype Id</mat-label>
+                <input matInput type="text" placeholder="" formControlName="skypeId">
+            </mat-form-field>
+
+        </div>
+
+    </div>
+
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button color="warn" type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{ data? 'Update' : 'Add'}}</button>
+    </div>
+
+</form>
